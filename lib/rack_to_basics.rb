@@ -1,3 +1,4 @@
+require 'rack_to_basics/template_helper'
 require 'rack_to_basics/route_dsl'
 
 class RackToBasics
