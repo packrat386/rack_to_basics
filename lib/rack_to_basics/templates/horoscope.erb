@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Horoscope</title>
+  <head>
+  <body>
+    <p>Please input your birth date</p>
+    <form method="post">
+      <label for="birthdate">Name:</label></br>
+      <input type="date" id="birthdate" name="birthdate">
+      <input type="submit" value="Get Horoscope">
+    </form>
+    <% if !tmpl_inputs.nil? %>
+      <hr>
+      <p>Your sign: <%= tmpl_inputs[:sign].capitalize %></p>
+      <p>Your horoscope:</p>
+      <p> <%= tmpl_inputs[:prediction] %></p>
+    <% end %>
+  </body>
+</html>

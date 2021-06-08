@@ -7,6 +7,7 @@ class RackToBasics
       b.route '/', 'home'
       b.route '/status', 'status'
       b.route '/greeter', 'greeter'
+      b.route '/horoscope', 'horoscope'
 
       b.not_found 'not_found'
     end
