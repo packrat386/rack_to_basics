@@ -1,9 +1,11 @@
-class RackToBasics
-  def call(env)
-    status = 200
-    headers = { "Content-Type" => "text/html" }
-    body = ["Hello World!"]
+require 'rack_to_basics/router'
 
-    [status, headers, body]
+class RackToBasics
+  def initialize(*)
+    @router = RackToBasics::Router.new
+  end
+
+  def call(env)
+    @router.call(env)
   end
 end

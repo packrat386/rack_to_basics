@@ -1,3 +1,5 @@
-require_relative 'lib/rack_to_basics'
+$:.unshift(File.join(File.dirname(__FILE__), 'lib'))
+
+require 'rack_to_basics'
 
 run RackToBasics.new
