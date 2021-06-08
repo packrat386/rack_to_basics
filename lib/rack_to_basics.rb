@@ -5,6 +5,7 @@ class RackToBasics
     @router = RackToBasics::RouteDSL.build do |b|
       b.route '/', 'home'
       b.route '/status', 'status'
+      b.route '/greeter', 'greeter'
 
       b.not_found 'not_found'
     end
